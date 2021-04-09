@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Spectral:wght@700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+  background: black;
+}
+
+body {
+  margin: 0 auto;
+  background-color: black;
+  font-family: 'Karla', sans-serif;
+  max-width: 200rem;
+  min-width: 32rem;
+}
+
+nav {
+  background: #0b0b0b;
+  width: 100%;
+  max-width: 200rem;
+  height: 10rem;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  min-width: 32rem;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: salmon;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav p {
+  font-family: 'Spectra', sans sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: White;
+}
+.homepage,
+.menu,
+.story,
+.contact {
+  padding: 0 2rem;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://images.pexels.com/photos/4577179/pexels-photo-4577179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  -webkit-background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.homepage h1 {
+  font-family: 'Spectral', serif;
+  font-weight: bold;
+  font-size: 7rem;
+  text-align: center;
+  line-height: 100%;
+}
+
+.homepage .tagline {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.homepage .hero-text {
+  animation: welcome 1500ms ease-in-out;
+}
+
+@keyframes welcome {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.5) translateY(-20rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+footer {
+  height: 20rem;
+  background: #0b0b0b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: salmon;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer input {
+  background: none;
+  border: 1px solid white;
+  padding-left: 0.4rem;
+  height: 2rem;
+  color: white;
+  outline: none;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+footer form label,
+footer form input {
+margin-right: 1rem;
+}
+
+footer form input:placeholder {
+  color: white;
+}
+
+footer form button,
+.contact form button {
+  width: 7rem;
+  height: 2.5rem;
+  background: salmon;
+  opacity: 0.8;
+  border: none;
+  border-radius: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+footer form button:hover,
+.contact form button:hover {
+  opacity: 1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80');
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  -webkit-background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu h2 {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.food-drinks {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 75rem;
+  max-width: 95%;
+}
+
+.steaks {
+  animation: steakmenu 2000ms ease-in-out;
+}
+
+.wine {
+  animation: winemenu 2000ms ease-in-out;
+}
+
+@keyframes steakmenu {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes winemenu {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('https://images.unsplash.com/photo-1615937662601-4724eceda00f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80');
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  -webkit-background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.story p {
+    font-size: 1.4rem;
+    max-width: 70rem;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1607198179219-cd8b835fdda7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2549&q=80');
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    -webkit-background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+.contact-box,
+.contact-form {
+max-width: 60rem;
+width: 95%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.contact p{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.contact-form textarea {
+  width: 95%;
+  max-width: 60rem;
+  height: 30rem;
+  background: none;
+  border: solid 1px white;
+  outline: none;
+  resize: none; 
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+}
+
+.contact input {
+  width: 95%;
+  max-width: 60rem;
+    background: none;
+    height: 5rem;
+    outline: none;
+    margin-bottom: 2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+.contact button {
+  margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .homepage,
+  .menu,
+  .story {
+    padding: 0 1rem;
+  }
+
+  .homepage h1 {
+    font-size: 4rem;
+  }
+  
+  .homepage .tagline {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .food-drinks {
+    flex-direction: column;
+  }
+  .steaks {
+    margin-bottom: 10rem;
+  }
+  footer {
+    flex-direction: column;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  .food-drinks {
+    min-width:initial;
+  
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  nav {
+  padding: 0 2rem;
+  }
+
+  .food-drinks {
+    font-size: 1rem;=
+  }
+}
