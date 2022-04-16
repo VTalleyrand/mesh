@@ -2,7 +2,7 @@
 
 Restaurant site using HTML/CSS and Javascript
 
-Live site: [https://vportfoliopierre.netlify.app](https://vportfoliopierre.netlify.app/)
+Live site: [https://vportfoliomesh.netlify.app](https://vportfoliomesh.netlify.app)
 
 ### Objective(s):
 
